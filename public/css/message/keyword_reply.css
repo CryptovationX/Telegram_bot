@@ -1,0 +1,51 @@
+/* Style the tab */
+.keyword_reply_tab {
+    overflow: hidden;
+    border: 1px solid #e6e6e6;
+    background-color: ghostwhite;
+    width: 29.8%;
+}
+
+/* Style the buttons inside the tab */
+.keyword_reply_tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 25px;
+    transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.keyword_reply_tab button:hover {
+    background-color: #3399ff;
+    color: white;
+}
+
+/* Create an active/current tablink class */
+.keyword_reply_tab button.active {
+    background-color: #3399ff;
+}
+
+/* Style the tab content */
+.keyword_reply_tabcontent {
+    display: none;
+}
+.keyword_reply_tabcontent_row {
+    padding: 6px 10px;
+    border: 1px solid #e6e6e6;
+    margin: 0;
+}
+/* Style the replying box */
+.replying_inside{
+    padding-left: 1%;
+    width: 100%;
+}
+
+/* Preview Image */
+.thumb_image{
+    padding-left: 1.6%;
+    height: 200px;
+    width: 200px;
+}

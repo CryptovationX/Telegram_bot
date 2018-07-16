@@ -1,0 +1,30 @@
+/* Notice table */
+.notice_row{
+    margin-bottom:3%;
+}
+.title_row{
+    background-color:ghostwhite;     
+    border-bottom:1px solid  #e6e6e6;
+    border-top:1px solid black; 
+    padding-top:1%;
+}
+.content_row{
+    border-bottom:1px solid  #e6e6e6;
+    padding-top:1%;
+}
+
+/* Quick start guide */
+li{
+    list-style-type: decimal;
+    color: #3399ff;
+    
+}
+.list{
+    text-decoration: none;
+    color: #3399ff;
+}
+.list:hover{
+    text-decoration: none;
+    color: #cccccc;
+}
+/* Reserved messages */

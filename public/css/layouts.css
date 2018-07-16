@@ -1,0 +1,44 @@
+.left{
+    text-align: left;
+}
+.center{
+    text-align: center;
+}
+.right{
+    text-align: right;
+}
+.main{
+    margin-left: 22%;
+    margin-top: 5%;
+    background-color: white;
+    height: 100vh;
+}
+
+/* Font */
+a{
+    font-family: 'Open Sans', sans-serif;
+}
+div{
+    font-family: 'Open Sans', sans-serif;
+}
+h1{
+    font-family: 'Open Sans', sans-serif;
+}
+h2{
+    font-family: 'Open Sans', sans-serif;
+}
+h3{
+    font-family: 'Open Sans', sans-serif;
+}
+h4{
+    font-family: 'Open Sans', sans-serif;
+}
+h5{
+    font-family: 'Open Sans', sans-serif;
+}
+p{
+    font-family: 'Open Sans', sans-serif;
+}
+span{
+    font-family: 'Open Sans', sans-serif;
+}

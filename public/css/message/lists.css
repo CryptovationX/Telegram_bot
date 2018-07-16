@@ -1,0 +1,110 @@
+.smaller{
+    font-size: 12px;
+    text-decoration: none;
+    color: #d9d9d9;
+    display: block;
+}
+
+/* Style the tab */
+.tabletab {
+    overflow: hidden;
+    border: 1px solid #e6e6e6;
+    background-color: ghostwhite;
+    width: 34.8%;
+}
+
+/* Style the buttons inside the tab */
+.tabletab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 25px;
+    transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tabletab button:hover {
+    background-color: #3399ff;
+    color: white;
+}
+
+/* Create an active/current tablink class */
+.tabletab button.active {
+    background-color: #3399ff;
+}
+
+/* Style the tab content */
+.tabletabcontent {
+    display: none;
+}
+.tabletabcontent_row {
+    padding: 6px 10px;
+    border: 1px solid #e6e6e6;
+    margin: 0;
+}
+/* Message & Keyword input */
+.messagebox{
+    padding:1% 1% 1% 1.6%;
+}
+.messagebox_inside{
+    padding-left: 5%;
+}
+
+/* Type & Status */
+.dropdownbox{
+    padding:1% 1% 1% 0% !important;
+}
+.dropdownbox_inside{
+    width: 200px;
+    height: 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-color: #e6e6e6;
+    background-color: white;
+    -webkit-appearance: button;
+    padding-left: 5%;
+    color: #737373;
+    cursor: pointer;
+    border-radius: 0;
+}
+/* Search */
+.searchbox{
+    padding:1% 0% 1% 0%;
+}
+.searchbox_inside{
+    background-color: #3399ff;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    color: white;
+    padding: 3px 10px;
+    opacity: 0.7;    
+    cursor: pointer;
+    transition: 0.3s;    
+}
+.searchbox_inside:hover{
+    opacity: 1;
+}
+
+/* Table */
+table, td, th {    
+    border: 1px solid #e6e6e6;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 2%;    
+}
+
+th, td {
+    font-size: 14px;
+    padding: 10px 0;
+}

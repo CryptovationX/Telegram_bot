@@ -1,0 +1,97 @@
+/* Navbar layout */
+.navbar-left{
+    padding: 0.7% 0 0.5% 0;
+    background-image: url("https://s3-ap-southeast-1.amazonaws.com/cryptovationx/public/pinbg.jpg");
+}
+.navbar-middle{
+    padding: 1.66% 0 0 0;
+    display: block;    
+}
+.navbar-middle-special{
+    padding: 1.66% 0 0 0;
+    display: block;    
+}
+.navbar-right{
+    padding: 1.2% 0 1.2% 0;
+    display: block;    
+}
+/* Navbar font */
+.nav-font{
+    color:  black;
+    background-color: transparent;
+    transition: 0.3s;
+}
+.nav-font:hover{
+    color: white;
+    background-color:#f7941d;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+/* Navbar logo */
+.nav-pic{
+    height: 40px;
+    width: 200px;
+    margin-left: 19%;
+}
+
+/* Side Navbar */
+.sidenav {
+    height: 100%;
+    width: 94.8%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: ghostwhite;
+    padding-top: 20px;
+    color: black;
+    border-right: 1px solid #e6e6e6;
+    overflow-x: scroll;
+    cursor: pointer;
+}
+
+.sidenav a, .dropdown_sidenav {
+    padding: 5% 0 5% 20%;
+    text-decoration: none;
+    color: black;
+    display: block;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.username{
+    font-size: 12px;
+    padding: 0 0 2% 0;
+    text-decoration: none;
+    color: #d9d9d9;
+    display: block;
+}
+
+.sidenav a:hover {
+    color:white;
+    background-color: #3399ff;
+}
+.dropdown_sidenav:hover{
+    color:white;
+    background-color: #3399ff;
+}
+.dropdown_container {
+    display: none;
+}
+.dropdown_container a {
+    font-size: 12px;  
+}
+.dropdown_container a:hover{
+    color:white;
+    background-color: #3399ff;
+}
+.active {
+    background-color: #3399ff;
+    color: white !important;
+    opacity: 0.6;    
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
