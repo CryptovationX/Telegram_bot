@@ -107,6 +107,35 @@ if (extn == "gif" || extn == "png" || extn == "jpg" || extn == "jpeg") {
 }
 });
 
+$("#attach_file").on('change', function () {
+
+var imgPath = $(this)[0].value;
+var extn = imgPath.substring(imgPath.lastIndexOf('.') + 1).toLowerCase();
+
+if (extn == "gif" || extn == "png" || extn == "jpg" || extn == "jpeg") {
+    if (typeof (FileReader) != "undefined") {
+
+        var image_holder2 = $("#image-holder2");
+        image_holder2.empty();
+
+        var reader = new FileReader();
+        reader.onload = function (e) {
+            $("<img/>", {
+                "src": e.target.result,
+                    "class": "thumb_image"
+            }).appendTo(image_holder2);
+
+        }
+        image_holder2.show();
+        reader.readAsDataURL($(this)[0].files[0]);
+    } else {
+        alert("This browser does not support FileReader.");
+    }
+} else {
+    alert("Only images");
+}
+});
+
 // On & Off display
 function botElimination() {
     var be_checkBox = document.getElementById("bot_Elimination");
@@ -143,5 +172,25 @@ function reportChat() {
 			rc_on.style.display = "none";
             rc_off.style.display = "block";
       }
+}
+
+// Section in groupchat announcement
+$("#boardcast-alert").hide();
+$("#submit-button").click(function () {
+
+window.setTimeout(function () { 
+$("#boardcast-alert").fadeTo(200, 50).slideDown(50, function(){
+$("#boardcast-alert").fadeTo(200, 50).slideDown(50);
+})
+});
+window.setTimeout(function () { 
+$("#boardcast-alert").fadeTo(200, 50).slideUp(50, function(){
+$("#boardcast-alert").fadeTo(200, 50).slideUp(50);
+}); 
+} , 2000); 
+}); 
+// Hammenu
+function Hammenu() {
+    document.getElementById("myDropdown").classList.toggle("show");
 }
 </script>

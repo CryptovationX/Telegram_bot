@@ -12,9 +12,10 @@
 <link rel="stylesheet" href="{{ asset('/css/home.css') }}">
 <link rel="stylesheet" href="{{ asset('/css/layouts.css') }}">
 <link rel="stylesheet" href="{{ asset('/css/account_information/account_information_main.css') }}">
-<link rel="stylesheet" href="{{ asset('/css/message/auto_reply.css') }}">
-<link rel="stylesheet" href="{{ asset('/css/message/keyword_reply.css') }}">
-<link rel="stylesheet" href="{{ asset('/css/message/lists.css') }}">
+<link rel="stylesheet" href="{{ asset('/css/bot/auto_reply.css') }}">
+<link rel="stylesheet" href="{{ asset('/css/bot/keyword_reply.css') }}">
+<link rel="stylesheet" href="{{ asset('/css/bot/lists.css') }}">
+<link rel="stylesheet" href="{{ asset('/css/groupchat/groupchat_main.css') }}">
 <link rel="stylesheet" href="{{ asset('/css/navbar.css') }}">
 <link rel="stylesheet" href="{{ asset('/css/setting/setting_main.css') }}">
 {{-- Font --}}

@@ -48,6 +48,7 @@
 .messagebox{
     padding:1% 1% 1% 1.6%;
 }
+
 .messagebox_inside{
     padding-left: 5%;
 }
@@ -86,10 +87,11 @@
     padding: 3px 10px;
     opacity: 0.7;    
     cursor: pointer;
-    transition: 0.3s;    
+    transition: 0.3s;       
 }
 .searchbox_inside:hover{
     opacity: 1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* Table */
@@ -107,4 +109,21 @@ table {
 th, td {
     font-size: 14px;
     padding: 10px 0;
+}
+@media screen and (max-width: 600px) {
+    .smaller{
+        font-size: 6px;
+    }
+    table, td, th {    
+        font-size: 8px;
+    }
+    .searchbox_inside{
+        font-size: 8px;
+    }
+    .messagebox{
+        padding:1% 3% 1% 3%;
+    }
+    .for_phone{
+        display: none;
+    }
 }

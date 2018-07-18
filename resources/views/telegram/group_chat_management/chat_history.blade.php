@@ -3,7 +3,7 @@
     @section("body")
     @extends("layouts.navbar")
         @section("contents")
-        <h3>Control Panel</h3>
+        <h3>Chat History</h3>
         <p class="smaller">????</p>
         
 @endsection

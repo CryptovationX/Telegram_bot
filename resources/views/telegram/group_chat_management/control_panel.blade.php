@@ -5,16 +5,13 @@
         @section("contents")
         <h3>Control Panel</h3>
         <p class="smaller">????</p>
-        <div class="row button_row">
-            <div class="col-12 compose_button_div"><a href="/group_chat_management/control_panel_main" class="create_compose_button_box">Back</a></div>
-        </div>
         {!! Form::open() !!}
         <table>
             <tr>
                 <th>Members</th>
                 <td>
                     <div class="row" style="margin:0">
-                        <div style="margin-left:2%">Number of members in our database</div>
+                        <div style="margin-left:5%">Number of members in our database</div>
                     </div>
                 </td>
             </tr> 
@@ -22,7 +19,7 @@
                 <th>Member's information</th>
                 <td>
                     <div class="row" style="margin:0">
-                        <div style="padding:0 0 0 2%">{{Form::submit('Export', ["class"=>"searchbox_inside"])}}</div>
+                        <div style="padding:0 0 0 5%">{{Form::submit('Export', ["class"=>"searchbox_inside"])}}</div>
                     </div>
                 </td>
             </tr> 

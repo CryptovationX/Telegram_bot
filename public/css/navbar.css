@@ -90,8 +90,130 @@
     color: white !important;
     opacity: 0.6;    
 }
+/* Ham */
+.hambtn {
+    color: black;
+    padding: 2px 12px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
 
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
+.hambtn:hover, .hambtn:focus {
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.hamdropdown {
+    position: relative;
+    display: none;
+}
+
+.hamdropdown-content {
+    display: none;
+    position: absolute;
+    background-color: ghostwhite;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.hamdropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.hamline {
+    width: 20px;
+    height: 1px;
+    background-color: black;
+    margin: 5px 0;
+}
+
+.hamdropdown a:hover {background-color: #3399ff;}
+.show {display: block;}
+
+@media screen and (max-width: 1100px) {
+    .nav-pic{
+        height: 25px;
+        width: 136px;
+        margin: 6px 20px 4px 45px;
+    }
+    
+}
+@media screen and (max-width: 800px) {
+    .sidenav{
+        width: 165px;
+    }
+    .nav-pic{
+        height: 20px;
+        width: 110px;
+        margin: 6px 20px 4px 50px;
+    }
+    .col-3{
+        max-width: 500px;
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+    .sidenav{
+        display: none;
+    }
+    .sidenav a{
+        font-size: 6px;
+    }
+    .nav-font{
+       padding-left: 10px;
+    }
+    .nav-pic{
+        height: 10px;
+        width: 50px;
+        margin: 4px 35px;
+    }
+    
+    .username{
+        font-size: 8px;
+    }
+    .dropdown_sidenav {
+        font-size: 8px;
+        padding: 12px 16px;
+    }
+    .col-1{
+        display: none;
+    }
+    .col-3{
+        display: none;
+    }
+    .col-9{
+        flex: 100% 0 0;
+        max-width: 700px;
+        right: 0;
+    }
+    .hamdropdown-content a{
+        font-size: 8px;
+    }
+}
+@media screen and (max-width: 450px) {
+    .hamdropdown {
+        display: inline-block;
+        position: relative;
+        left: 308px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .hamdropdown {
+        display: inline-block;
+        position: relative;
+        left: 270px;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .hamdropdown {
+        display: inline-block;
+        position: relative;
+        left: 240px;
+    }
 }

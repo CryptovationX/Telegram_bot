@@ -14,6 +14,15 @@
 Route::get('/home', function () {
     return view('telegram.home');
 });
+Route::get('/FAQ', function () {
+    return view('telegram.faq');
+});
+Route::get('/contact_us', function () {
+    return view('telegram.contact_us');
+});
+Route::get('/privacy_policy', function () {
+    return view('telegram.privacy_policy');
+});
 
 // Account information
 Route::get('/account_information/price_plan', function () {
@@ -59,9 +68,6 @@ Route::get('/group_chat_management/chat_history', function () {
 });
 Route::get('/group_chat_management/control_panel', function () {
     return view('telegram.group_chat_management.control_panel');
-});
-Route::get('/group_chat_management/control_panel_main', function () {
-    return view('telegram.group_chat_management.control_panel_main');
 });
 
 // Setting

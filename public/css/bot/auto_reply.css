@@ -20,6 +20,7 @@
 .create_compose_button_box:hover{
     opacity: 1;
     color: white !important;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* Creating part */
@@ -39,10 +40,41 @@
 }
 .radio_check{
     text-align:left;
-    padding-left: 2%;
+    padding-left: 5%;
 }
 .datepicker{
     width: 100px;
     text-align: center;
     cursor: pointer;
+}
+.radio_check select{
+    width: 50px;
+    border: none;
+    background-color: #ffa64d;
+    color: white;
+    opacity: 0.8;
+    transition: 0.4s;
+}
+.radio_check select:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.radio_check input{
+    border: none;
+    background-color: #ffa64d;
+    color: white;
+    opacity: 0.8;
+    transition: 0.4s;
+}
+.radio_check input:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+@media screen and (max-width: 600px) {
+    .create_compose_button_box{
+        font-size: 8px;
+    }
+    .radio_check select{
+        width: 20px;
+    }
 }

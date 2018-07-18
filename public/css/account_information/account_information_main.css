@@ -8,3 +8,28 @@
     padding-left: 2%;
 }
 
+/* Price plan */
+.correct{
+    color: #00e600;
+}
+.incorrect{
+    color: #ff3333;
+}
+.package_a{
+    color: white;
+    background-color:#3399ff;
+    opacity: 0.5;
+}
+.package_b{
+    color: white;
+    background-color:#3399ff;
+    opacity: 0.7;
+}
+.package_c{
+    color: white;
+    background-color:#3399ff;
+}
+
+@media screen and (max-width: 600px) {
+    
+}

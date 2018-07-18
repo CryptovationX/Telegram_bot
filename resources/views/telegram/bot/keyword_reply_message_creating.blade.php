@@ -6,7 +6,7 @@
         <h3>Keyword Reply Message</h3>
         <p class="smaller">You can set a message to send to users when they input specific keywords in chats.</p>
         <div class="row button_row">
-            <div class="col-12 compose_button_div"><a href="/message/keyword_reply_message" class="create_compose_button_box">Back</a></div>
+            <div class="col-12 compose_button_div"><a href="/bot/keyword_reply_message" class="create_compose_button_box">Back</a></div>
         </div>
         {!! Form::open() !!}
         <table>

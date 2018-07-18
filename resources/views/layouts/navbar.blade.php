@@ -19,13 +19,52 @@
     <div class="col-1 navbar-right center">
         <a class="nav-font" href="">Logout</a>
     </div>
+
+
+    {{-- This menu will be displayed on a phone --}}
+    <div class="hamdropdown">
+        <div onclick="Hammenu()" class="hambtn">
+            <div class="hamline"></div>
+            <div class="hamline"></div>
+            <div class="hamline"></div>
+        </div>
+        <div id="myDropdown" class="hamdropdown-content" style="right:0">
+            <div class="dropdown_sidenav">Group & Chat Management</div>
+                <div class="dropdown_container">
+                    <a href="/group_chat_management/announcement">&nbsp; &nbsp; Announcement</a>
+                    <a href="/group_chat_management/ban_users">&nbsp; &nbsp; Ban users</a>
+                    <a href="/group_chat_management/chat_history">&nbsp; &nbsp; Chat history</a>
+                    <a href="/group_chat_management/control_panel">&nbsp; &nbsp; Control panel</a>
+                </div>
+                <hr>
+                <div class="dropdown_sidenav">Bot</div>
+                    <div class="dropdown_container">
+                        <a href="/bot/auto_reply_message">&nbsp; &nbsp; Auto reply message</a>
+                        <a href="/bot/broadcast">&nbsp; &nbsp; Broadcast</a>
+                        <a href="/bot/greeting_message">&nbsp; &nbsp; Greeting message</a>
+                        <a href="/bot/keyword_reply_message">&nbsp; &nbsp; Keyword reply message</a>
+                    </div>
+                <hr>
+                <div class="dropdown_sidenav">Account Information</div>
+                    <div class="dropdown_container">
+                        <a href="/account_information/price_plan">&nbsp; &nbsp; Price Plan</a>
+                        <a href="/account_information/registered_information">&nbsp; &nbsp; Registered Information</a>
+                    </div>
+                <div class="dropdown_sidenav">Setting</div>
+                    <div class="dropdown_container">
+                        <a href="/setting/basic">&nbsp; &nbsp; Account Settings</a>
+                    </div>
+                    <a href="/logout">Logout</a>
+        </div>
+    </div>
+
 </div>
 <div class="row">
 <!-- Side navigation -->
     <div class="col-3" style="background-color:white;">
         <div class="col-9">
             <div class="sidenav">
-                <div class="center" style="font-size:20px">Name</div>
+                <div class="center"><h3>Name</h3></div>
                 <div class="center username">@Username</div>
                 <hr>
                 <div class="dropdown_sidenav">Group & Chat Management</div>
@@ -33,26 +72,25 @@
                     <a href="/group_chat_management/announcement">&nbsp; &nbsp; Announcement</a>
                     <a href="/group_chat_management/ban_users">&nbsp; &nbsp; Ban users</a>
                     <a href="/group_chat_management/chat_history">&nbsp; &nbsp; Chat history</a>
-                    <a href="/group_chat_management/control_panel_main">&nbsp; &nbsp; Control panel</a>
+                    <a href="/group_chat_management/control_panel">&nbsp; &nbsp; Control panel</a>
                 </div>
                 <hr>
                 <div class="dropdown_sidenav">Bot</div>
                     <div class="dropdown_container">
-                        <a href="/bot/broadcast">&nbsp; &nbsp; Broadcast</a>
                         <a href="/bot/auto_reply_message">&nbsp; &nbsp; Auto reply message</a>
-                        <a href="/bot/keyword_reply_message">&nbsp; &nbsp; Keyword reply message</a>
+                        <a href="/bot/broadcast">&nbsp; &nbsp; Broadcast</a>
                         <a href="/bot/greeting_message">&nbsp; &nbsp; Greeting message</a>
+                        <a href="/bot/keyword_reply_message">&nbsp; &nbsp; Keyword reply message</a>
                     </div>
                 <hr>
-                <div class="dropdown_sidenav">Setting</div>
-                    <div class="dropdown_container">
-                        <a href="/setting/basic">&nbsp; &nbsp; Account Settings</a>
-                        <a href="/setting/control_panel_main">&nbsp; &nbsp; Control Panel</a>
-                    </div>
                 <div class="dropdown_sidenav">Account Information</div>
                     <div class="dropdown_container">
                         <a href="/account_information/price_plan">&nbsp; &nbsp; Price Plan</a>
                         <a href="/account_information/registered_information">&nbsp; &nbsp; Registered Information</a>
+                    </div>
+                <div class="dropdown_sidenav">Setting</div>
+                    <div class="dropdown_container">
+                        <a href="/setting/basic">&nbsp; &nbsp; Account Settings</a>
                     </div>
             </div>
         </div>
@@ -70,9 +108,9 @@
         <footer style="background-color: transparent">
                 <div class="row" style="margin-top:10px; margin-left:3.6%; margin-bottom:10px;">
                     <div class="col-sm-12 col-sm-offset-2 text-small left">
-                        <a href="" target="_blank" class="faq_footer">FAQ</a>&nbsp; &nbsp; &nbsp;
-                        <a href="" target="_blank" class="contact_footer">Contact us</a>&nbsp; &nbsp; &nbsp;                 
-                        <a href="" target="_blank" class="term_footer">Privacy policy</a>
+                        <a href="/FAQ" target="_blank" class="faq_footer">FAQ</a>&nbsp; &nbsp; &nbsp;
+                        <a href="/contact_us" target="_blank" class="contact_footer">Contact us</a>&nbsp; &nbsp; &nbsp;                 
+                        <a href="/privacy_policy" target="_blank" class="term_footer">Privacy policy</a>
                     </div>
                     <!-- /.column -->
                 </div>

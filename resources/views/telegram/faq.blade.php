@@ -1,9 +1,10 @@
 @extends("layouts.main")
-    @section("title", "")
+    @section("title", "FAQ")
     @section("body")
     @extends("layouts.navbar")
         @section("contents")
-        <h3></h3>
-        <p class="smaller">????</p>
+        {{-- <h3>FAQ</h3>
+        <p class="smaller">????</p> --}}
+        <h1>Coming soon</h1>
         
 @endsection

@@ -7,8 +7,8 @@
         <h3>Auto Reply Message</h3>
         <p class="smaller">This message will be sent automatically to users when they send you messages.</p>
         <div class="row button_row">
-            <div class="col-2"><a href="/message/auto_reply_message/create" class="create_compose_button_box">Create new</a></div>
-            <div class="col-10 compose_button_div">{{Form::submit('Broadcast', ["class"=>"searchbox_inside"])}}</div>
+            <div class="col-4"><a href="/bot/auto_reply_message/create" class="create_compose_button_box">Create new</a></div>
+            <div class="col-8 compose_button_div">{{Form::submit('Broadcast', ["class"=>"searchbox_inside"])}}</div>
         </div>
         <table>
             <tr>

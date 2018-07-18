@@ -6,7 +6,7 @@
         <h3>Auto Reply Message</h3>
         <p class="smaller">This message will be sent automatically to users when they send you messages.</p>
         <div class="row button_row">
-            <div class="col-12 compose_button_div"><a href="/message/auto_reply_message" class="create_compose_button_box">Back</a></div>
+            <div class="col-12 compose_button_div"><a href="/bot/auto_reply_message" class="create_compose_button_box">Back</a></div>
         </div>
         {!! Form::open() !!}
         <table>
