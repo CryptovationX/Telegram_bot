@@ -8,7 +8,7 @@
         {!! Form::open() !!}
         <table>
             <tr>
-                <th>Saltuation</th>
+            <th>{{Form::label('saltuation', 'Saltuation')}}</th>
                 <td>
                     <div class="row" style="margin:0; padding-left:1.6%;">
                         <div class="dropdownbox">{{Form::select('saltuation', ['Mr' => 'Mr.', 'Mrs' => 'Mrs.', 'Ms'=>'Ms.'], null, ["class"=>"dropdownbox_inside"])}}</div>
@@ -16,19 +16,19 @@
                 </td>
             </tr> 
             <tr>
-                <th>First Name</th>
+                <th>{{Form::label('firstname', 'First Name')}}</th>
                 <td><div class="messagebox left">{{ Form::text('firstname', null, array("placeholder"=>"First Name", "class"=>"creating_messagebox_inside" )) }}</div></td>
             </tr> 
             <tr>
-                <th>Last Name</th>
+                <th>{{Form::label('lastname', 'Last Name')}}</th>
                 <td><div class="messagebox left">{{ Form::text('lastname', null, array("placeholder"=>"Last Name", "class"=>"creating_messagebox_inside" )) }}</div></td>
             </tr>
             <tr>
-                <th>Email</th>
+                <th>{{Form::label('email', 'Email')}}</th>
                 <td><div class="messagebox left">{{ Form::text('email', null, array("placeholder"=>"Email", "class"=>"creating_messagebox_inside" )) }}</div></td>
             </tr> 
             <tr>
-                <th>Content</th>
+                <th>{{Form::label('content', 'Content')}}</th>
                 <td><div class="messagebox left">{{ Form::textarea('content', null, array("placeholder"=>"Enter message","class"=>"replying_inside" )) }}</div></td>
             </tr>
         </table> 

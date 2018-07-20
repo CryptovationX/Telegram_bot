@@ -8,7 +8,7 @@
         {!! Form::open() !!}
         <table>
                 <tr>
-                    <th>Profile photo</th>
+                    <th>{{Form::label('image', 'Profile photo')}}</th>
                     <td>
                         <div id="wrapper">
                             <div class="messagebox left">{{Form::file('image',['id' => 'fileUpload', 'class'=>''])}}</div>
@@ -18,28 +18,28 @@
                     </td>
                 </tr> 
                 <tr>
-                    <th>Account name</th>
+                    <th>{{Form::label('account_name', 'Account name')}}</th>
                     <td>
                         <div class="row" style="margin:0">
-                            <div class="messagebox left col-6">{{ Form::text('Keyword', null, array("class"=>"setting_textform" )) }} </div>
+                            <div class="messagebox left col-6">{{ Form::text('account_name', null, array("class"=>"setting_textform" )) }} </div>
                             <div style="padding:1% 0 0 1%">{{Form::submit('Save', ["class"=>"searchbox_inside"])}}</div>
                         </div>
                     </td>
                 </tr> 
                 <tr>
-                    <th>Description</th>
+                    <th>{{Form::label('description', 'Description')}}</th>
                     <td>
                         <div class="row" style="margin:0">
-                            <div class="messagebox left col-6">{{ Form::text('Keyword', null, array("class"=>"setting_textform" )) }} </div>
+                            <div class="messagebox left col-6">{{ Form::text('description', null, array("class"=>"setting_textform" )) }} </div>
                             <div style="padding:1% 0 0 1%">{{Form::submit('Save', ["class"=>"searchbox_inside"])}}</div>
                         </div>
                     </td>
                 </tr>
                 <tr>
-                    <th>About text</th>
+                    <th>{{Form::label('about_text', 'About text')}}</th>
                     <td>
                         <div class="row" style="margin:0">
-                            <div class="messagebox left col-6">{{ Form::text('Keyword', null, array("class"=>"setting_textform" )) }} </div>
+                            <div class="messagebox left col-6">{{ Form::text('about_text', null, array("class"=>"setting_textform" )) }} </div>
                             <div style="padding:1% 0 0 1%">{{Form::submit('Save', ["class"=>"searchbox_inside"])}}</div>
                         </div>
                     </td>

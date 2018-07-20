@@ -8,7 +8,7 @@
         {!! Form::open() !!}
         <table>
             <tr>
-                <th>Members</th>
+                <th>{{Form::label('member', 'Members')}}</th>
                 <td>
                     <div class="row" style="margin:0">
                         <div style="margin-left:5%">Number of members in our database</div>
@@ -16,7 +16,7 @@
                 </td>
             </tr> 
             <tr>
-                <th>Member's information</th>
+                <th>{{Form::label('members_information', 'Member Information')}}</th>
                 <td>
                     <div class="row" style="margin:0">
                         <div style="padding:0 0 0 5%">{{Form::submit('Export', ["class"=>"searchbox_inside"])}}</div>
@@ -24,7 +24,7 @@
                 </td>
             </tr> 
             <tr>
-                <th>Bot elimination</th>
+                <th>{{Form::label('bot_Elimination', 'Bot elimination')}}</th>
                 <td>
                     <div class="row" style="margin:0">
                         <label class="switch">
@@ -39,7 +39,7 @@
                 </td>
             </tr>
             <tr>
-                <th>Delete service messages</th>
+                <th>{{Form::label('delete_ServiceMessage', 'Delete service messages')}}</th>
                 <td>
                     <div class="row" style="margin:0">
                         <label class="switch">
@@ -54,7 +54,7 @@
                 </td>
             </tr> 
             <tr>
-                <th>Report your chat room activities</th>
+                <th>{{Form::label('report_Chat', 'Report your chat room activities')}}</th>
                 <td>
                     <div class="row" style="margin:0">
                         <label class="switch">
